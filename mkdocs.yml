@@ -3,6 +3,7 @@ nav:
   - صفحه اصلی: index.md
   - درسنامه:
     - content/index.md
+    - Hello World: content/helloWorld.md
   - تمرین ها:
     - blog/index.md
 
