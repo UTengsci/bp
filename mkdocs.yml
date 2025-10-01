@@ -15,6 +15,7 @@ theme:
   language: fa
   features: 
     - content.code.copy
+    - content.code.annotate
     - navigation.footer
     - navigation.indexes
     - navigation.tabs
