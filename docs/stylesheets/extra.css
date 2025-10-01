@@ -2,24 +2,7 @@
   --md-default-fg-color: hsla(var(--md-hue), 10%, 90%, 1);
   --md-default-bg-color: hsla(var(--md-hue), 10%, 10%, 1);
   --md-code-bg-color: hsla(var(--md-hue), 15%, 7%, 1);
-  /*--md-default-bg-color: #1a1a1a;*/
 }
-
-
-/*
-body {
-    background-color: #121212;
-    color: #e0e0e0; 
-}
-
-.md-sidebar {
-    background-color: #121212; 
-}
-
-.md-footer {
-    background-color: #1e1e1e; 
-}
-*/
 
 #mainTitle {
   font-size: 1.5em;

@@ -3,7 +3,6 @@ nav:
   - صفحه اصلی: index.md
   - درسنامه:
     - content/index.md
-    - Loops: content/for.md
   - تمرین ها:
     - blog/index.md
 
@@ -39,10 +38,13 @@ theme:
         name: salam
 
   font:
-    text: Roboto
+    text: Vazirmatn
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
