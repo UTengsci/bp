@@ -1,0 +1,56 @@
+site_name: Basic Programming
+nav:
+  - صفحه اصلی: index.md
+  - درسنامه:
+    - content/index.md
+    - Loops: content/for.md
+  - تمرین ها:
+    - blog/index.md
+
+theme:
+  name: material
+  direction: rtl
+  logo: assets/University_of_Tehran_logo.svg.png
+  favicon: assets/University_of_Tehran_logo.svg.png
+  language: fa
+  features: 
+    - content.code.copy
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - scheme: slate
+      primary: teal
+      toggle:
+        icon: material/brightness-7
+        name: switch to dark mode
+
+    - scheme: default
+      primary: cyan
+      toggle:
+        icon: material/brightness-4
+        name: salam
+
+  font:
+    text: Roboto
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+plugins:
+  - search
+  - blog
+  - tags
