@@ -44,6 +44,9 @@ theme:
     text: Vazirmatn
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - stylesheets/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 markdown_extensions:
   - admonition
   - pymdownx.critic
@@ -57,6 +60,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
