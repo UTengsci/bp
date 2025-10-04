@@ -3,6 +3,7 @@ nav:
   - صفحه اصلی: index.md
   - درسنامه:
     - content/index.md
+    - Compiler and environment: content/compilerAndEnv.md
     - Hello World: content/helloWorld.md
     - Variables and Operators: content/variablesAndOperators.md
   - تمرین ها:
@@ -23,6 +24,7 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.tracking
+    - navigation.expand
     - search.highlight
     - search.share
     - search.suggest
