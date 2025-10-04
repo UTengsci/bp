@@ -3,6 +3,7 @@ nav:
   - صفحه اصلی: index.md
   - درسنامه:
     - content/index.md
+    - Compiler and environment: content/compilerAndEnv.md
     - Hello World: content/helloWorld.md
   - تمرین ها:
     - blog/index.md
@@ -22,6 +23,7 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.tracking
+    - navigation.expand
     - search.highlight
     - search.share
     - search.suggest
