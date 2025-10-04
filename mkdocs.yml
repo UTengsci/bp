@@ -3,7 +3,7 @@ nav:
   - صفحه اصلی: index.md
   - درسنامه:
     - content/index.md
-    - Compiler and environment: content/Compiler_and_env.md
+    - Compiler and environment: content/compilerAndEnv.md
     - Hello World: content/helloWorld.md
   - تمرین ها:
     - blog/index.md
