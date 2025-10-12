@@ -40,6 +40,20 @@ if (x > 10) {
 ```
 
 ## else if
-برای 
+برای مواقعی که شرط اولیه `false` میشه، ما میتونیم شروط دیگری برای حالت های دیگر تعیین کنیم. برای این کار باید از `elseif
+(CONDITION)` استفاده کنید.
 
+```cpp
+int x;
+cin >> x;
+if (x > 10) {
+    cout << "if called" << endl;
+} else if (x >= 5) {
+    cout << "else if called" << endl;
+} else {
+    cout << "else called" << endl;
+}
+```
 
+در مثال بالا اگر $x \ge 10$ باشه `if` صدا زده میشه و اگر $10 \ge x \ge 5$ باشه `else if` صدا زده میشه و اگر $5 > x$ باشه،
+`else` صدازده میشه.
