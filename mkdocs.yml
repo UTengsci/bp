@@ -3,10 +3,11 @@ nav:
   - صفحه اصلی: index.md
   - درسنامه:
     - content/index.md
-    - Compiler and environment: content/compilerAndEnv.md
+    - Compiler and Environment: content/compilerAndEnv.md
     - Hello World: content/helloWorld.md
     - Variables and Operators: content/variablesAndOperators.md
     - Input and Output: content/inputOutput.md
+    - Decision Making: content/decisionMaking.md
   - تمرین ها:
     - blog/index.md
 
@@ -64,6 +65,8 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.inlinehilite
