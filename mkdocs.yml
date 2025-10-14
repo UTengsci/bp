@@ -7,6 +7,7 @@ nav:
     - Hello World: content/helloWorld.md
     - Variables and Operators: content/variablesAndOperators.md
     - Input and Output: content/inputOutput.md
+    - Loops: content/loops.md
   - تمرین ها:
     - blog/index.md
 
