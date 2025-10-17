@@ -128,7 +128,7 @@ if (x > 10) {
     (CONDITION ? FIRST_OPERATION : SECOND_OPERATION);
     ```
 
-    در اینجا اگر `CONDITION` برابر با `true` باشد، `FIRST_CONDITION` اجرا می شود و در غیر این صورت `SECOND_CONDITION`
+    در اینجا اگر `CONDITION` برابر با `true` باشد، `FIRST_OPERATION` اجرا می شود و در غیر این صورت `SECOND_OPERATION`
     اجرا می شود.
 
     به عنوان مثال ۲ کد زیر معادل هم هستند.
