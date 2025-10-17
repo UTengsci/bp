@@ -9,6 +9,7 @@ nav:
     - Input and Output: content/inputOutput.md
     - Decision Making: content/decisionMaking.md
     - Loops: content/loops.md
+    - Arrays: content/Array.md
   - تمرین ها:
     - blog/index.md
 
