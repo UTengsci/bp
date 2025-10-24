@@ -172,3 +172,27 @@ for (int i = 0; i < n; i++) {
 // input: 7
 // output: 0 1 2 4 5 6 
 ```
+
+!!!example "مثال" 
+    لزوما قرار نیست ++i داشته باشیم برای تغییرات: <br>
+
+    ```cpp
+    int n;
+    cin >> n;
+    for (int i = n; i >= 0; i--) {
+        cout << i << ' ';
+    }
+    // input: 7
+    // output: 7 6 5 4 3 2 1 0
+    ```
+
+    ```cpp
+    int n;
+    cin >> n;
+    for (int i = 1; i < n; i *= 2) {
+        cout << i << ' ';
+    }
+
+    // input: 9
+    // output: 1 2 4 8
+    ```
