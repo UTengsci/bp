@@ -10,6 +10,7 @@ nav:
     - Decision Making: content/decisionMaking.md
     - Loops: content/loops.md
     - Arrays: content/Array.md
+    - Functions: content/function.md
   - تمرین ها:
     - blog/index.md
 
@@ -54,10 +55,13 @@ extra_javascript:
   - stylesheets/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
   - admonition
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.superfences
+  - tables
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
