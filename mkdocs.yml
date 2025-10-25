@@ -11,6 +11,7 @@ nav:
     - Loops: content/loops.md
     - Arrays: content/Array.md
     - Functions: content/function.md
+    - Strings: contents/string.md
   - تمرین ها:
     - blog/index.md
 
