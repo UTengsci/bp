@@ -4,13 +4,12 @@ icon: material/function-variant
 
 ### تابع چیست؟
 
-به طور خلاصه یک تابع گروهی از دستوراته که با هم یک کار رو روی یک تعداد ورودی خاص انجام میدن.
-توی دبیرستان این اسم به گوشتون خورده احتمالا مثل همچین توابعی:
+به طور خلاصه یک تابع گروهی از دستوراته که با هم یک کار رو روی یک تعداد ورودی خاص انجام میدن.به عنوان مثال:
 
 - $y = x^2 - 5x + 3$
 - $y = \sin(x)$
 
-اینها هم دقیقا مطابق با تعریف بالا هستش که ما یک ورودی $x$ داریم و یک سری عملیات های خاص روش انجام میشه و تبدیل میشه به مقدار $y$ و اون رو به عنوان خروجی میبینیم.
+ما یک ورودی $x$ داریم و یک سری عملیات های خاص روش انجام میشه و تبدیل میشه به مقدار $y$ و اون رو به عنوان خروجی میبینیم.
 
 > به عنوان مثال برای تابع اول ورودی $x$ رو یک بار به توان 2 میرسونیم و یک بار ضربدر 5- میکنیم و این دو مقدار رو با 3 جمع میکنیم و در خروجی نشون میدیم.
 
@@ -19,8 +18,7 @@ icon: material/function-variant
 ### نحوه تعریف تابع در کد
 به طور کلی به این شکل ما در ++C تابع رو تعریف میکنیم:
 ```cpp linenums="1"
-return_type function_name( parameter list )
-{
+return_type function_name( parameter list ) {
    body of the function
 }
 ```
@@ -28,7 +26,7 @@ return_type function_name( parameter list )
 !!! توضیحات
     - <b>Return Type</b> <br>
         این بخش نوع متغیر خروجی تابع رو مشخص میکنه که از نوع ...string, int, double, float باشه. <br>
-        برای مثال در توابع سینوس و دو جمله ای بالا خروجی تابع یک متغیر اعشاری خواهد بود که در نتیجه باید از تایپ های float یا double استفاده کرد در تعریف آنها. <br>
+        برای مثال در توابع سینوس و دو جمله ای بالا خروجی تابع یک متغیر اعشاری خواهد بود که در نتیجه باید از تایپ های float یا double استفاده کنیم <br>
         نکته ای که حائز اهمیته اینه که ما ممکنه بخوایم یک تابعی داشته باشیم که عملیاتی برامون انجام بده ولی خروجی نداشته باشه که اون وقت از تایپ <b>void</b> استفاده میکنیم.
     - <b>Function Name</b> <br>
         در اینجا باید اسم تابع رو انتخاب کنیم که باید خاص باشه و تابع دیگه ای با این اسم تعریف نشده باشه قبلا (حواستون باشه حتی متغیر و آرایه ای با این اسم هم نباید تعریف شده باشه و کلا هرچیزی همچون متغیر و آرایه و تابع تعریف میکنید باید اسم مخصوص خودش رو داشته باشه و خاص باشه) <br>
@@ -51,8 +49,7 @@ return_type function_name( parameter list )
 === "First Code"
 
     ```cpp linenums="1"
-    double Binomial_Function(double x)
-    {
+    double Binomial_Function(double x) {
         double power2 = x * x;
         double multiply5 = 5 * x;
         double answer = power2 - multiply5 + 3;
@@ -65,8 +62,7 @@ return_type function_name( parameter list )
 === "Second Code" 
 
     ```cpp linenums="1"
-    double Binomial_Function(double x)
-    {
+    double Binomial_Function(double x) {
         double power2 = x * x;
         double multiply5 = 5 * x;
         return power2 - multiply5 + 3; // (1)!
@@ -78,8 +74,7 @@ return_type function_name( parameter list )
 === "Third Code"
 
     ```cpp linenums="1"
-    double Binomial_Function(double x)
-    {
+    double Binomial_Function(double x) {
         return x * x - 5 * x + 3; // (1)!
     }
     ```
@@ -91,13 +86,12 @@ return_type function_name( parameter list )
 !!!tip "نکته"
     همه کد ها یک تابع main اول کار دارن که خودتون هم دیدین.
     ```cpp linenums="1"
-    int main()
-    {
+    int main() {
         return 0;
     }
     ```
     شاید بپرسین چرا تایپ تابع main باید int باشه. <br>
-    همونطور که میبینین تابع return 0 داره و یک int برمیگردونه و فلسفه این هم یکم پیچیده اس برای این بخش و فعلا بهش نمیپردازم پس :sweat_smile:
+    همونطور که میبینین تابع return 0 داره و یک int برمیگردونه.
 
 حالا بریم ببینیم چطور از تابع استفاده میکنیم.
 
@@ -105,13 +99,11 @@ return_type function_name( parameter list )
 #include <iostream>
 using namespace std;
 
-double Binomial_Function(double x)
-{
+double Binomial_Function(double x) {
     return x * x - 5 * x + 3;
 }
 
-int main()
-{
+int main() {
     double x = Binomial_Function(15.71); // x = (15.71)^2 - 5*(15.71) + 3
     double y = -11.93;
     cout << Binomial_Function(y); // (-11.93)^2 - 5*(-11.93) + 3 -> خروجی ما خواهد بود
@@ -128,10 +120,8 @@ int main()
     #include <iostream>
     using namespace std;
 
-    int main()
-    {
-        double Binomial_Function(double x)
-        {
+    int main() {
+        double Binomial_Function(double x) {
             return x * x - 5 * x + 3;
         }
 
@@ -148,17 +138,14 @@ int main()
     #include <iostream>
     using namespace std;
 
-    double Binomial_Function(double x)
-    {
-        double sin(double x2)
-        {
+    double Binomial_Function(double x) {
+        double sin(double x2) {
             //Function Body
         }
         return x * x - 5 * x + 3;
     }
 
-    int main()
-    {
+    int main() {
 
         double x = Binomial_Function(15.71);
         double y = -11.93;
@@ -179,13 +166,11 @@ int main()
 #include <iostream>
 using namespace std;
 
-int Add(int x, int y, int z) // (1)!
-{
+int Add(int x, int y, int z) {// (1)!  
     return x + y + z;
 }
 
-int main()
-{
+int main() {
     cout << Add(3, 4, 5); // (2)!
     cout << Add(-11, 2, 0); // -9
     int y = 5;
@@ -226,6 +211,7 @@ int main()
 | `y`       |       4 |
 | `z`    |      5 |
 
+
 در اینجا تابع با فرض x = 3 و y = 4 و z = 5 شروع میکنه به انجام عملیات هایی که درونش تعریف شده. <br>
 عملیات های درون تابع رو انجام داده میشه و در نهایت خروجی return میشه داخل تابع main که صداش کردیم. در اینجا اون خروجی قراره x + y + z باشه که میشه 3 + 4 + 5 که یعنی خروجی 12 خواهد شد.
 
@@ -241,17 +227,14 @@ using namespace std;
 
 int Arr[10];
 
-void Set_Value_Zero() // (1)!
-{
-    for (int i = 0; i < 10; i++)
-    {
+void Set_Value_Zero() {// (1)!  
+    for (int i = 0; i < 10; i++) {
         Arr[i] = 0;
     }
     return; // (2)!
 }
 
-int main()
-{
+int main() {
     Set_Value_Zero();
     cout << Arr[3]; // 0
     return 0;
@@ -270,10 +253,8 @@ int main()
     #include <iostream>
     using namespace std;
 
-    void Set_Value_Zero()
-    {
-        for (int i = 0; i < 10; i++)
-        {
+    void Set_Value_Zero() {
+        for (int i = 0; i < 10; i++) {
             Arr[i] = 0;
         }
         return;
@@ -281,8 +262,7 @@ int main()
 
     int Arr[10]; // مشکل کد اینجاس که بعد از تابع تعریف شده
 
-    int main()
-    {
+    int main() {
         Set_Value_Zero();
         cout << Arr[3]; // 0
         return 0;
@@ -301,17 +281,14 @@ int main()
 #include <iostream>
 using namespace std;
 
-void Output_Answer(int n, string S) // (1)!
-{
-    for (int i = 0; i < n; i++)
-    {
+void Output_Answer(int n, string S) { // (1)!  
+    for (int i = 0; i < n; i++) {
         cout << S << '\n'; // (2)!
     }
     return;
 }
 
-int main()
-{
+int main() {
     string S;
     int n;
     cin >> n >> S;
@@ -333,17 +310,14 @@ int main()
     #include <iostream>
     using namespace std;
 
-    void Output_Answer(int n, string S = "Kambiz") // (1)!
-    {
-        for (int i = 0; i < n; i++)
-        {
+    void Output_Answer(int n, string S = "Kambiz") { // (1)!  
+        for (int i = 0; i < n; i++) {
             cout << S << '\n';
         }
         return;
     }
 
-    int main()
-    {
+    int main() {
         int n;
         cin >> n;
         Output_Answer(n); // (2)!
@@ -363,17 +337,14 @@ int main()
     #include <iostream>
     using namespace std;
 
-    void Output_Answer(int n = 10, string S) // (1)!
-    {
-        for (int i = 0; i < n; i++)
-        {
+    void Output_Answer(int n = 10, string S) { // (1)!  
+        for (int i = 0; i < n; i++) {
             cout << S << '\n';
         }
         return;
     }
 
-    int main()
-    {
+    int main() {
         string Str;
         cin >> Str;
         Output_Answer(Str); // (2)!
@@ -390,17 +361,14 @@ int main()
     #include <iostream>
     using namespace std;
 
-    void Output_Answer(string S, int n = 10) // (1)!
-    {
-        for (int i = 0; i < n; i++)
-        {
+    void Output_Answer(string S, int n = 10) { // (1)!  
+        for (int i = 0; i < n; i++) {
             cout << S << '\n';
         }
         return;
     }
 
-    int main()
-    {
+    int main() {
         string Str;
         cin >> Str;
         Output_Answer(Str);
@@ -417,12 +385,10 @@ int main()
     #include <iostream>
     using namespace std;
 
-    int main()
-    {
+    int main() {
         string Str;
         cin >> Str;
-        for (int i = 0; i < 10; i++)
-        {
+        for (int i = 0; i < 10; i++) {
             cout << Str << '\n';
         }
         return 0;
@@ -439,8 +405,7 @@ int main()
 
     void Output_Answer(int n, string S); // (1)!
 
-    int main()
-    {
+    int main() {
         string S;
         int n;
         cin >> n >> S;
@@ -448,10 +413,8 @@ int main()
         return 0;
     }
 
-    void Output_Answer(int n, string S)
-    {
-        for (int i = 0; i < n; i++)
-        {
+    void Output_Answer(int n, string S) {
+        for (int i = 0; i < n; i++) {
             cout << S << '\n';
         }
         return;
