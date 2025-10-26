@@ -191,6 +191,8 @@ int main() {
     }
     ```
 
+---
+
 ## اپراتور ها
 
 ### Arithmetic Operators 

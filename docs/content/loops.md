@@ -59,6 +59,8 @@ while (x < 10) {
     } while (CONDITION);
     ```
 
+---
+
 ## for
 
 > وقتی به تکرار بخشی از کد نیاز داریم و **از تعداد دقیق آن با خبریم** از حلقه `for` استفاده می کنیم.
@@ -135,6 +137,8 @@ for (int i = 0; i < n; i++) {
             // do some other work
         }
         ```
+
+---
 
 ## Jump Statements
 
