@@ -66,7 +66,7 @@ int balance[6] = {2, 4, 8, 12, 16, 18};
 یه راه دیگه اینه که میتونین بعد از تعریف آرایه هم به خونه هاش مقدار بدین.
 
 ```cpp linenums="1"
-int balance[5];
+int balance[6];
 balance[0] = 2;
 balance[1] = 4;
 balance[2] = 8;
