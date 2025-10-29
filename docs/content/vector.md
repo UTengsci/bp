@@ -47,7 +47,7 @@ vector<DATA_TYPE> NAME(SIZE, VALUE_OF_EACH);
 ```cpp
 vector<int> vec1(5, -4); // {-4, -4, -4, -4, -4}
 vector<bool> vec2(3, true); // {true, true, true} 
-vector<string> vec3(2, "salam"); // {"salam", "salam", "salam"}
+vector<string> vec3(2, "salam"); // {"salam", "salam"}
 ```
 
 و طبیعتا میشه آرایه‌ای از وکتور ها یا وکتوری از وکتور ها تعریف کرد.
