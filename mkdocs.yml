@@ -12,6 +12,7 @@ nav:
     - Arrays: content/Array.md
     - Functions: content/function.md
     - Strings: content/string.md
+    - Vector: content/vector.md
   - تمرین ها:
     - blog/index.md
 
