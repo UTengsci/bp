@@ -207,6 +207,8 @@ for (string name : studentNames) {
 
     int Arr[4] = {3, 1, 9, -4};
     sort(Arr, Arr + 4);
+
+    // Arr = {-4, 1, 3, 9}
     ```
 
     - `reverse`
