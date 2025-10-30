@@ -176,3 +176,76 @@ for (string name : studentNames) {
 
 // output: iliya soroush reza ali
 ```
+
+!!! note "Sort & Reverse"
+    دوتا تابع وجود دارن توی کتابخونه زیر به اسم `sort` و `reverse`:
+    
+    ```cpp
+    #include <algorithm>
+    ```
+
+    - Sort
+    
+    این تابع میتونه `Vector` یا `Array` شمارو مرتب کنه.
+
+    ```cpp
+    #include <iostream>
+    #include <algorithm>
+    #include <vector>
+    using namespace std;
+
+    int main(){
+        int Arr[4] = {3, 1, 9, -4};
+        vector<int> Vec = {2, 2, 0, 1};
+        sort(Arr, Arr + 4);
+        sort(Vec.begin(), Vec.end());
+        for (int i = 0; i < 4; i++){
+            cout << Arr[i] << ' ';
+        }
+        //output:
+        // -4 1 3 9
+        cout << endl;
+        for (int x: Vec){
+            cout << x << ' ';
+        }
+        //output:
+        // 0 1 2 2
+        return 0;
+    }
+    ```
+
+    - reverse
+    
+    این تابع ترتیب `vector` و `Array` شمارو برعکس میکنه.
+
+    ```cpp
+    #include <iostream>
+    #include <algorithm>
+    #include <vector>
+    using namespace std;
+
+    int main(){
+        int Arr[4] = {3, 1, 9, -4};
+        vector<int> Vec = {2, 2, 0, 1};
+        reverse(Arr, Arr + 4);
+        reverse(Vec.begin(), Vec.end());
+        for (int i = 0; i < 4; i++){
+            cout << Arr[i] << ' ';
+        }
+        //output:
+        // -4 9 1 3
+        cout << endl;
+        for (int x: Vec){
+            cout << x << ' ';
+        }
+        //output:
+        // 1 0 2 2
+        return 0;
+    }
+    ```
+
+    اگه هم توی خواستین وکتورتون رو از بزرگ به کوچیک سورت کنید (اول سورت و بعدش ریورس):
+
+    ```cpp
+    sort(Vec.rbegin(), Vec.rend());
+    ```

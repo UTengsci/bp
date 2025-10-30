@@ -189,7 +189,7 @@ DATA_TYPE arrayName[SIZE_OF_ROWS][SIZE_OF_COLUMNS];
 
     for (int i = 0; i < 2; i++){
         for (int j = 0; j < 3; j++){
-            cout << A[i][j];
+            cout << A[i][j] << ' ';
         }
         cout << endl; // (2)!
     } // (3)!
@@ -215,7 +215,7 @@ DATA_TYPE arrayName[SIZE_OF_ROWS][SIZE_OF_COLUMNS];
 
     for (int j = 0; j < 3; j++){
         for (int i = 0; i < 2; i++){
-            cout << A[i][j];
+            cout << A[i][j] << ' ';
         }
         cout << endl;
     } // (1)!
@@ -237,7 +237,7 @@ DATA_TYPE arrayName[SIZE_OF_ROWS][SIZE_OF_COLUMNS];
 
     for (int j = 2; j >= 0; j--){
         for (int i = 0; i < 2; i++){
-            cout << A[i][j];
+            cout << A[i][j] << ' ';
         }
         cout << endl;
     } // (1)!
