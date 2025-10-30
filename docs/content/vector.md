@@ -177,6 +177,10 @@ for (string name : studentNames) {
 // output: iliya soroush reza ali
 ```
 
+---
+
+## توابع مربوط
+
 !!! note "Sort & Reverse"
     دوتا تابع وجود دارن توی کتابخونه زیر به اسم `sort` و `reverse`:
     
@@ -184,67 +188,51 @@ for (string name : studentNames) {
     #include <algorithm>
     ```
 
-    - Sort
-    
+    - `sort`
+    ---
+
     این تابع میتونه `Vector` یا `Array` شمارو مرتب کنه.
-
-    ```cpp
-    #include <iostream>
-    #include <algorithm>
-    #include <vector>
-    using namespace std;
-
-    int main(){
-        int Arr[4] = {3, 1, 9, -4};
-        vector<int> Vec = {2, 2, 0, 1};
-        sort(Arr, Arr + 4);
-        sort(Vec.begin(), Vec.end());
-        for (int i = 0; i < 4; i++){
-            cout << Arr[i] << ' ';
-        }
-        //output:
-        // -4 1 3 9
-        cout << endl;
-        for (int x: Vec){
-            cout << x << ' ';
-        }
-        //output:
-        // 0 1 2 2
-        return 0;
-    }
-    ```
-
-    - reverse
     
-    این تابع ترتیب `vector` و `Array` شمارو برعکس میکنه.
+    برای وکتور:
 
     ```cpp
-    #include <iostream>
-    #include <algorithm>
-    #include <vector>
-    using namespace std;
+    vector<int> Vec = {2, 2, 0, 1};
+    sort(Vec.begin(), Vec.end());
 
-    int main(){
-        int Arr[4] = {3, 1, 9, -4};
-        vector<int> Vec = {2, 2, 0, 1};
-        reverse(Arr, Arr + 4);
-        reverse(Vec.begin(), Vec.end());
-        for (int i = 0; i < 4; i++){
-            cout << Arr[i] << ' ';
-        }
-        //output:
-        // -4 9 1 3
-        cout << endl;
-        for (int x: Vec){
-            cout << x << ' ';
-        }
-        //output:
-        // 1 0 2 2
-        return 0;
-    }
+    // Vec = {0, 1, 2, 2}
     ```
 
-    اگه هم توی خواستین وکتورتون رو از بزرگ به کوچیک سورت کنید (اول سورت و بعدش ریورس):
+    برای آرایه:
+    ```cpp
+
+    int Arr[4] = {3, 1, 9, -4};
+    sort(Arr, Arr + 4);
+    ```
+
+    - `reverse`
+    ---
+
+    این تابع ترتیب `vector` و `Array` شمارو برعکس میکنه.
+    
+    برای وکتور:
+
+    ```cpp
+    vector<int> Vec = {2, 2, 0, 1};
+    reverse(Vec.begin(), Vec.end());
+
+    // Vec = {1, 0, 2, 2}
+    ```
+
+    برای آرایه:
+
+    ```cpp
+    int Arr[4] = {3, 1, 9, -4};
+    reverse(Arr, Arr + 4);
+
+    // Arr = {-4, 9, 1, 3}
+    ```
+
+    اگر هم به طور مستقیم خواستید وکتور رو نزولی مرتب کنید:
 
     ```cpp
     sort(Vec.rbegin(), Vec.rend());
