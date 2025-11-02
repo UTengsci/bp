@@ -13,6 +13,7 @@ nav:
     - Functions: content/function.md
     - Strings: content/string.md
     - Vector: content/vector.md
+    - Recursion: content/Recursion.md
   - تمرین ها:
     - blog/index.md
 
