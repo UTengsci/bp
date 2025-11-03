@@ -49,7 +49,7 @@ theme:
       primary: cyan
       toggle:
         icon: material/brightness-4
-        name: salam
+        name: switch to light mode
 
   font:
     text: Vazirmatn
