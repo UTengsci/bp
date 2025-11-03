@@ -3,6 +3,7 @@ nav:
   - صفحه اصلی: index.md
   - درسنامه:
     - content/index.md
+    - Introduction: content/introduction.md
     - Compiler and Environment: content/compilerAndEnv.md
     - Hello World: content/helloWorld.md
     - Variables and Operators: content/variablesAndOperators.md
@@ -48,7 +49,7 @@ theme:
       primary: cyan
       toggle:
         icon: material/brightness-4
-        name: salam
+        name: switch to light mode
 
   font:
     text: Vazirmatn
