@@ -93,6 +93,8 @@ output: 5 4 2
 
 * (الف) مجموع ارقام تشکیل‌دهنده عدد ورودی را برگرداند
 
+* (ب) بزرگترین رقم تشکیل‌دهنده عدد را برگرداند.
+
 ???success "پاسخ"
     ```cpp
     #include <iostream>
@@ -108,17 +110,7 @@ output: 5 4 2
         }
         return sum;
     }
-
-    // int main() ... (کامل در قسمت ج، د، ه)
-    ```
-
-* (ب) بزرگترین رقم تشکیل‌دهنده عدد را برگرداند.
-
-???success "پاسخ"
-    ```cpp
-    #include <iostream>
-    using namespace std;
-
+    
     int maxDigit(int n)
     {
         int maxVal = 0;
