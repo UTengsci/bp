@@ -24,6 +24,8 @@ links:
 
 3.اگر مقدار فرد بود، به جای آن - چاپ شود
 
+<!-- more -->
+
 ???success "پاسخ"
     ```cpp
     #include <iostream>
