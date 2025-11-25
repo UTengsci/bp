@@ -2,10 +2,6 @@
 date: 2025-11-19
 categories:
     - کارگاه عملی
-tags:
-    - Input and Output
-    - Variables
-    - Operators
 links:
     - content/inputOutput.md
     - content/variablesAndOperators.md 
