@@ -25,27 +25,18 @@ hide:
 
 <p> <br> </p>
 
-<div style="display: flex; justify-content: center; gap: 300px;">
-    <!-- ستون ۲ -->
-  <div style="border:0px solid #ccc; padding:10px; border-radius:8px; text-align:center; width:300px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 20px;">
+    <div style="border:0px solid #ccc; padding:10px; border-radius:8px; text-align:center; width: min(90%, 300px); margin: 10px 15px;">
     <a href="blog">
-        <img class="zoom" src="assets/image-from-rawpixel-id-12987639-png.png" alt="Image 2" width="260">
+      <img class="zoom" src="assets/image-from-rawpixel-id-12987639-png.png" alt="Image 2" width="260">
     </a>
-    <h3> <p> <b> تمرین ها  </b> </p> </h3>
+    <h3> <p> <b> تمرین ها </b> </p> </h3>
   </div>
 
-  <!-- ستون ۱ -->
-  <div style="border:0px solid #ccc; padding:10px; border-radius:8px; text-align:center; width:200px;">
+    <div style="border:0px solid #ccc; padding:10px; border-radius:8px; text-align:center; width: min(90%, 200px); margin: 10px 15px;">
     <a href="content">
-        <img class="zoom" src="assets/vecteezy_poetry-books-stack-icon-isolated-design_55810409.png" alt="Image 1" width="231">
+      <img class="zoom" src="assets/vecteezy_poetry-books-stack-icon-isolated-design_55810409.png" alt="Image 1" width="231">
     </a>
     <h3> <p> <b> درسنامه </b> </p> </h3>
   </div>
-
-    
-</div> 
-
-
-
-
-
+</div>
