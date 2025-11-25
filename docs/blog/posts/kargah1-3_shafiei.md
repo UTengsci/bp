@@ -31,6 +31,8 @@ links:
     }
     ```
 
+<!-- more -->
+
 ## سری 1 (مسائل پایه)
 
 **جمع یک بازه**
@@ -260,6 +262,37 @@ links:
             }
             cout << endl; // Move to next row
         }
+        return 0;
+    }
+    ```
+
+
+**بررسی پالیندروم بودن عدد (متقارن بودن)**
+
+* برنامه‌ای بنویسید که یک عدد صحیح مثبت (مثلاً 12321) از کاربر دریافت کند. برنامه باید تشخیص دهد که آیا این عدد پالیندروم است (یعنی از هر دو طرف یکسان خوانده می‌شود) یا خیر "NO" یا "YES" چاپ کند.
+
+???success "پاسخ"
+    ```cpp
+    #include <iostream>
+    using namespace std;
+    int main()
+    {
+        int num, originalNum, reversed = 0, remainder;
+        cout << "Enter a number: ";
+        cin >> num;
+        originalNum = num; // Store original to compare later
+        // Logic to mathematically reverse the number
+        while (num > 0) {
+            remainder = num % 10;
+            reversed = reversed * 10 + remainder; // Shift current reversed digits left and add new digit
+            num /= 10;
+        }
+
+        if (originalNum == reversed) 
+            cout << "YES" << endl;
+        else 
+            cout << "NO" << endl;
+
         return 0;
     }
     ```
